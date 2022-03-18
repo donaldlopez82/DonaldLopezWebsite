@@ -1,111 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ComicBuy</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Custom styles for this template -->
-<link href="navbar.css" rel="stylesheet">
-<style>
-    
-  .bg { 
-    background: url("../images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }</style>
+	<title>ComicBuy</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap core CSS -->
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="navbar.css" rel="stylesheet">
+	<style>
+		.bg {
+			background: url("../images/bg.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-top: 80px;
+		}
+	</style>
 </head>
-
-<body class="">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">ComicBuy.com</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="comics.html">Comics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="collectables.html">Collectables</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="apparel.html">Apparel</a>
-          </li>
-        </ul>
-      </div>
-          <!--SignIn and Cart-->
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="signin.html">Sign In</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="cart.html">Cart</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="dashboard.html">Dashboard</a>
-                </li>
-              </ul>
-            </div>
-    
-          </div>
-        </nav>
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-  <div class="container d-grid gap-3">
-    <div class="row">
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-      <div class="col p-2 border border-white">
-        <img class="" src="../images/comic3.jpg" alt="">
-      </div>
-    </div>
-    <div class="container">
-      <main>
-        <div class="py-5 text-center">
-          <img class="mb-4" src="../images/logo.png" alt="" width="288" height="248">
-        </div>
-      </main>
-          <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2022 ComicBuy</p>
-           <ul class="list-inline">
-             <li class="list-inline-item"><a href="#">Privacy</a></li>
-              <li class="list-inline-item"><a href="#">Terms</a></li>
-              <li class="list-inline-item"><a href="#">Support</a></li>
-           </ul>
-         </footer>
-       </div>
-    
+<body class="bg">
+	
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">ComicBuy.com</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="comics.html">Comics</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="collectables.html">Collectables</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="apparel.html">Apparel</a>
+					</li>
+				</ul>
+			</div>
+			<!--SignIn and Cart-->
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="signin.html">Sign In</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cart.html">Cart</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="dashboard.html">Dashboard</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container d-grid gap-3">
+		<div class="row">
+		  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">Avengers Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$6.99<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic11.jpg" alt="">
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">House of X Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$9.99<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic9.jpg" alt="">
+			
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">Batman Who Laughs Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$8.99<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic4.jpg" alt="">
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">Batman Who Laughs Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$15.99<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic7.jpg" alt="">
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic3.jpg" alt="">
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic3.jpg" alt="">
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic3.jpg" alt="">
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic3.jpg" alt="">
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+			<div class="col">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal">Comic</h4>
+				</div>
+				<div class="card-body">
+				  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
+				  <ul class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid" src="../images/comic3.jpg" alt="">
+				  </ul>
+				  <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  <footer class="my-5 pt-5 text-muted text-center text-small">
+		<p class="mb-1">&copy; 2022 ComicBuy</p>
+	   <ul class="list-inline">
+		 <li class="list-inline-item"><a href="#">Privacy</a></li>
+		  <li class="list-inline-item"><a href="#">Terms</a></li>
+		  <li class="list-inline-item"><a href="#">Support</a></li>
+	   </ul>
+	 </footer>
+		 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+   </div>
 </body>
 </html>
