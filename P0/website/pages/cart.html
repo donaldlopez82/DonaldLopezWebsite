@@ -11,6 +11,7 @@
     <link href="navbar.css" rel="stylesheet">
     <link href="signin.css" rel="stylesheet">
     <link href="form-validation.css" rel="stylesheet">
+    <script src="store.js" async></script>
     <style>
       .bg { 
         background: url("../images/bg.jpg");
@@ -40,10 +41,11 @@
             <li class="nav-item">
               <a class="nav-link" href="apparel.html">Apparel</a>
             </li>
+          </ul>
           </div>
 
         <!--SignIn and Cart Nav-->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="cart.html">Cart</a>
@@ -56,67 +58,97 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
 
-
+<!--StoreCart-->
     <div class="container">
-      <main>
         <div class="row g-5">
           
         <div class="text-center">
           <img class="mb-4" src="../images/logo.png" alt="" width="288" height="248">
           <h2>Checkout form</h2>
         </div>
-    
+     
         <div class="row g-1">
           <div class="col-md-1 col-lg-4 order-md-last">
+            
             <h4 class="d-flex justify-content-between align-items-center mb-3">
               <span class="text-primary">Your cart</span>
               <span class="badge bg-primary rounded-pill">3</span>
             </h4>
+            
             <ul class="list-group mb-3">
+
               <li class="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 class="my-0">Product name</h6>
-                  <small class="text-muted">Brief description</small>
+                <div class="cart-items">
+                <div class="cart-row">
+                  <div class="cart-item cart-column">
+                    <span class="cart-item-title">Comic</span>
+                  </div>
+                  <span class="cart-price cart-column">19.99</span>
+                      <div class="cart-quantity cart-column">
+                    <input class="w-0 btn-primary btn-sm cart-quantity-input" type="number" value= "1">
+                    <button type="button" class="w-10 btn btn-lg btn-danger">Remove</button>
+                  </div>
                 </div>
-                <span class="text-muted">$12</span>
-              </li>
+              </div>
+            </li>
+
               <li class="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 class="my-0">Second product</h6>
-                  <small class="text-muted">Brief description</small>
+                <div class="cart-items">
+                <div class="cart-row">
+                  <div class="cart-item cart-column">
+                    <span class="cart-item-title">Comic</span>
+                  </div>
+                  <span class="cart-price cart-column">19.99</span>
+                      <div class="cart-quantity cart-column">
+                    <input class="w-0 btn-primary btn-sm cart-quantity-input" type="number" value= "1">
+                    <button type="button" class="w-10 btn btn-lg btn-danger">Remove</button>
+                  </div>
                 </div>
-                <span class="text-muted">$8</span>
+              </div>
               </li>
+
               <li class="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 class="my-0">Third item</h6>
-                  <small class="text-muted">Brief description</small>
+                <div class="cart-items">
+                <div class="cart-row">
+                  <div class="cart-item cart-column">
+                    <span class="cart-item-title">Comic</span>
+                  </div>
+                  <span class="cart-price cart-column">19.99</span>
+                      <div class="cart-quantity cart-column">
+                    <input class="w-0 btn-primary btn-sm cart-quantity-input" type="number" value= "1">
+                    <button type="button" class="w-10 btn btn-lg btn-danger">Remove</button>
+                  </div>
                 </div>
-                <span class="text-muted">$5</span>
+              </div>
               </li>
-              <li class="list-group-item d-flex justify-content-between bg-light">
-                <div class="text-success">
-                  <h6 class="my-0">Promo code</h6>
-                  <small>EXAMPLECODE</small>
+
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div class="cart-items">
+                <div class="cart-row">
+                  <div class="cart-item cart-column">
+                    <span class="cart-item-title">Comic</span>
+                  </div>
+                  <span class="cart-price cart-column">19.99</span>
+                      <div class="cart-quantity cart-column">
+                    <input class="w-0 btn-primary btn-sm cart-quantity-input" type="number" value= "1">
+                    <button type="button" class="w-10 btn btn-lg btn-danger">Remove</button>
+                  </div>
                 </div>
-                <span class="text-success">−$5</span>
+              </div>
               </li>
+
               <li class="list-group-item d-flex justify-content-between">
-                <span>Total (USD)</span>
-                <strong>$20</strong>
+                <div class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+                  <span class="cart-total-price">$39.97</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
               </li>
             </ul>
-    
-            <form class="card p-2">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Promo code">
-                <button type="submit" class="btn btn-secondary">Redeem</button>
-              </div>
-            </form>
           </div>
+          
           <div class="col-md-7 col-lg-8">
             <h4 class="mb-3">Billing address</h4>
             <form class="needs-validation" novalidate>
@@ -219,11 +251,11 @@
               <div class="my-3">
                 <div class="form-check">
                   <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                  <label class="form-check-label" for="credit">Credit card</label>
+                  <label class="form-check-label" for="credit">Credit cart</label>
                 </div>
                 <div class="form-check">
                   <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                  <label class="form-check-label" for="debit">Debit card</label>
+                  <label class="form-check-label" for="debit">Debit cart</label>
                 </div>
                 <div class="form-check">
                   <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
@@ -233,19 +265,19 @@
     
               <div class="row gy-3">
                 <div class="col-md-6">
-                  <label for="cc-name" class="form-label">Name on card</label>
+                  <label for="cc-name" class="form-label">Name on cart</label>
                   <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                  <small class="text-muted">Full name as displayed on card</small>
+                  <small class="text-muted">Full name as displayed on cart</small>
                   <div class="invalid-feedback">
-                    Name on card is required
+                    Name on cart is required
                   </div>
                 </div>
     
                 <div class="col-md-6">
-                  <label for="cc-number" class="form-label">Credit card number</label>
+                  <label for="cc-number" class="form-label">Credit cart number</label>
                   <input type="text" class="form-control" id="cc-number" placeholder="" required>
                   <div class="invalid-feedback">
-                    Credit card number is required
+                    Credit cart number is required
                   </div>
                 </div>
     
@@ -272,7 +304,7 @@
             </form>
           </div>
         </div>
-        </main>
+        
     
       <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">&copy; 2022 ComicBuy</p>
@@ -286,5 +318,6 @@
         
         <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
           <script src="form-validation.js"></script>
+		</div>
       </body>
     </html>
