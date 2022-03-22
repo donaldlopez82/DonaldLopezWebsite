@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ComicBuy</title>
+    <title>CollectableBuy</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,7 @@
         </style>
         </head>
       
-        <body class="bg">
+        <body class=" list-group mb-3 p-5 bg">
           <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">ComicBuy.com</a>
@@ -34,173 +34,165 @@
               <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="collectables.html">Collectables</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="apparel.html">Apparel</a>
+                    <a class="nav-link active" aria-current="page" href="Collectables.html">Collectables</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="comics.html">Comics</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="apparel.html">Apparel</a>
+                  </li>
                 </ul>
               </div>
-                 <!--SignIn and Cart-->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="signin.html">Sign In</a>
+              <!--SignIn and Cart-->
+              
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Sign In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+        <div class="row shop-items">
+        <div class="row g-1">
+        
+          <h1 class="text-start">
+            <span class="text-primary">STORE<hr></span>
+          </h1>
+        
+            <div class="col shop-item">
+              <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal shop-item-title">Sailor Moon Collectable</h4>
+              </div>
+              <div class="card-body shop-item-details rounded">
+                <h1 class="card-title pricing-card-title shop-item-price">$15.99<small class="text-muted fw-light"></small></h1>
+                <div class="list-unstyled mt-3 mb-4">
+                <img class="img-fluid shop-item-image w-100" src="../images/toy3.jpg" alt="" height="">
+                </div>
+                <button type="button" class="w-100 btn btn-lg btn-primary shop-item-button">Add</button>
+              </div>
+              </div>
+            </div>
+        
+            <div class="col shop-item">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                <h4 class="my-0 fw-normal shop-item-title">Dark Knight Collectable</h4>
+                </div>
+                <div class="card-body shop-item-details">
+                <h1 class="card-title pricing-card-title shop-item-price">$12.99<small class="text-muted fw-light"></small></h1>
+                <div class="list-unstyled mt-3 mb-4">
+                  <img class="img-fluid shop-item-image w-100" src="../images/toy2.jpg" alt="">
+                </div>
+                <button type="button" class="w-100 btn btn-lg btn-primary shop-item-button">Add</button>
+                </div>
+              </div>
+              </div>
+        
+              <div class="col shop-item">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                <h4 class="my-0 fw-normal shop-item-title">Laughing Batman</h4>
+                </div>
+                <div class="card-body shop-item-details">
+                <h1 class="card-title pricing-card-title shop-item-price">$13.99<small class="text-muted fw-light"></small></h1>
+                <div class="list-unstyled mt-3 mb-4">
+                  <img class="img-fluid shop-item-image W-100" src="../images/toy1.jpg" alt="">
+                </div>
+                <button type="button" class="w-100 btn btn-lg btn-primary shop-item-button">Add</button>
+                </div>
+              </div>
+              </div>
+          
+          <div class="col-md- col-lg-2 order-md-last ">
+        
+            <h3 class="text-end">
+              <span class="text-primary">Your cart</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h3>
+        
+            <ul class="list-group mb-3 p-4">
+              
+              <li class="list-group-item  justify-content-between 1h-lg ">
+                <div class="cart-items">
+                  <div class="cart-row">
+                    <span class ="cart-item cart-column">ITEM</span>
+                    <span class ="cart-price cart-header cart-column">PRICE</span>
+                    <span class ="cart-quantity cart-header cart-column">QUANTITY</span>
+                  </div>
+                  
+                    <div class="cart-item cart-column">
+                      <img class="img-fluid cart-item-image w-100" src="../images/toy1.jpg" width="100" alt="">
+                      <span class="cart-item-title">Dark Knight</span>
+                    </div>
+                    <span class="cart-price cart-column">15.99</span>
+                    <div class="cart-quantity cart-column">
+                      <input class="w-100 btn-primary btn-sm cart-quantity-input" type="number" value="1">
+                      <button type="button" class="w-100 btn btn-lg btn-danger">Remove</button>
+                    </div>
+                  </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cart.html">Cart</a>
+        
+              <li class="list-group-item  justify-content-between lh-sm">
+                <div class="cart-items">
+                  <div class="cart-row">
+                    <div class="cart-item cart-column">
+                      <img class="img-fluid cart-item-image w-100" src="../images/toy3.jpg" width="100" alt="">
+                      <span class="cart-item-title">Sailor Moon</span>
+                    </div>
+                    <span class="cart-price cart-column">12.99</span>
+                    <div class="cart-quantity cart-column">
+                      <input class="w-100 btn-primary btn-sm cart-quantity-input" type="number" value="1">
+                      <button type="button" class="w-100 btn btn-lg btn-danger">Remove</button>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dashboard.html">Dashboard</a>
+        
+              <li class="list-group-item  justify-content-between lh-sm">
+                <div class="cart-items">
+                  <div class="cart-row">
+                    <div class="cart-item cart-column">
+                      <img class="img-fluid cart-item-image w-100" src="../images/toy1.jpg" width="100" alt="">
+                      <span class="cart-item-title">Laughing Batman</span>
+                    </div>
+                    <span class="cart-price cart-column">13.99</span>
+                    <div class="cart-quantity cart-column">
+                      <input class="w-100 btn-primary btn-sm cart-quantity-input" type="number" value="1">
+                      <button type="button" class="w-100 btn btn-lg btn-danger">Remove</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+        
+              <li class="list-group-item  justify-content-between">
+                <div class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+                  <span class="cart-total-price">$0</span>
+                </div>
+                <button class="w-100 btn btn-primary btn-purchase" type="button">PURCHASE</button>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
- 
-          <div class="container d-grid gap-3">
-            <div class="row">
-              <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Sailor Moon</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$19.99<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy3.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Laughing Batman</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$24.99<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy1.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Dark Knight</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy2.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Toy</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy3.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Toy</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy3.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Toy</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy3.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Toy</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy3.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Toy</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy3.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Toy</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light"></small></h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <img class="img-fluid" src="../images/toy3.jpg" alt="">
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
+            
+          </div>
           <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2022 ComicBuy</p>
+            <p class="mb-1">&copy; 2022 CollectableBuy</p>
            <ul class="list-inline">
              <li class="list-inline-item"><a href="#">Privacy</a></li>
               <li class="list-inline-item"><a href="#">Terms</a></li>
               <li class="list-inline-item"><a href="#">Support</a></li>
            </ul>
          </footer>
-		<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
        </div>
-</body>
-</html>
+  </body>
+  </html>
