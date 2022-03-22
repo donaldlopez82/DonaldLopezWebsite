@@ -49,14 +49,12 @@
 			<!--SignIn and Cart Nav-->
 
 			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="cart.html">Cart</a>
-				</li>
+				
 				<li class="nav-item">
 					<a class="nav-link" href="signin.html">Sign In</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="dashboard.html">Dashboard</a>
+					<a class="nav-link" href="dashboard.html">Admin</a>
 				</li>
 			</ul>
 		</div>
@@ -68,7 +66,7 @@
 
 			<div class="text-center">
 				<img class="mb-4" src="../images/logo.png" alt="" width="288" height="248">
-				<h2>Checkout form</h2>
+				<h2>Checkout</h2>
 			</div>
 
 
@@ -141,9 +139,15 @@
 						<li class="list-group-item justify-content-between">
 							<div class="cart-total">
 								<strong class="cart-total-title">Total</strong>
-								<span class="cart-total-price">$0</span>
+								
+								<span class="cart-total-price">  <script>
+        var CarTotal = sessionStorage.getItem("cartTotal");
+        document.write('<p>Your total is, ' + cartTot + '!</p>');
+    
+    										</script>
+								</span>
 							</div>
-							<button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+						
 						</li>
 					</ul>
 				</div>
@@ -299,7 +303,7 @@
 
 						<hr class="my-4">
 
-						<button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+						<button class="w-100 btn btn-primary btn-lg" type="submit"> Checkout</button>
 					</form>
 				</div>
 			</div>
@@ -316,5 +320,6 @@
 		</div>
 		<script src="form-validation.js"></script>
 		<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-	</div>
-</body></html>
+	
+</body>
+</html>

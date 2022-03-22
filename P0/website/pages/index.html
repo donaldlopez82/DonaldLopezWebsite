@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
     <style>
-		/*background*/
-			.bg { 
-      			background: url("../images/bg.jpg");
-      			background-repeat: no-repeat;
-      			background-size: cover;
-    		}
-</style>
-  </head>
-
-  <body class="bg">
+    
+      .bg { 
+        background: url("../images/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      </style>
+    </head>
+  <body class="text-center bg">
+    <!--Nav-->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">ComicBuy.com</a>
@@ -29,6 +30,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="signin.html"></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="comics.html">Comics</a>
             </li>
             <li class="nav-item">
@@ -36,30 +40,58 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="apparel.html">Apparel</a>
-            </li>
-          </ul>
-        </div>
-        <!--SignIn and Cart-->
+            	</li>
+			</ul>
+          </div>
+
+        <!--SignIn and Cart Nav-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="signin.html">Sign In</a>
-            </li>
+                <a class="nav-link active" aria-current="page" href="signin.html">Sign In</a>
+              </li>
+       
             <li class="nav-item">
-              <a class="nav-link" href="cart.html">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="dashboard.html">Dashboard</a>
+              <a class="nav-link" href="dashboard.html">Admin</a>
             </li>
           </ul>
         </div>
+      </div>
     </nav>
-<div class = "container">
-	
-  
-          <a class="btn btn-outline-primary" href="comics.html" role="button"><img class="img-fluid p-5" src="../images/comic15.png" width="auto" height="0" alt=""></a>
 
-
-          <footer class="my-5 pt-5 text-muted text-center text-small">
+    <div class="container">
+    <main class="form-signin" >
+        <form>
+          <img class="mb-4" src="../images/logo.png" alt="" width="288" height="248">
+          <h1 class="h3 mb-3 fw-normal"><strong> Please sign in</strong></h1>
+      
+          <div class="col-sm-12">
+          <div class="form-signin form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-signin form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+        </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <div class="col-sm-12">
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          <div>
+          <a href="signup.html">Sign up</a>
+          </div>
+        </div>
+		
+        </form>
+		</main>
+        <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; 2022 ComicBuy</p>
            <ul class="list-inline">
              <li class="list-inline-item"><a href="#">Privacy</a></li>
@@ -68,6 +100,6 @@
            </ul>
          </footer>
          <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  </div>
+	  </div>
   </body>
 </html>

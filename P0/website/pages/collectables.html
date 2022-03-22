@@ -22,6 +22,16 @@
     margin-top: 80px;
           }
         </style>
+	
+		<script>
+        function storeAndGo(){
+            // This uses sessionStorage but it can be changed to localStorage
+            var strCartotal = document.getElementById("carttotal").value;
+            sessionStorage.setItem("cartTotal", strCartotal);
+            location.href="cart.html";
+        }
+        
+    </script>
         </head>
       
         <body class=" list-group mb-3 p-5 bg">
@@ -50,11 +60,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="signin.html">Sign In</a>
                   </li>
+              
                   <li class="nav-item">
-                    <a class="nav-link" href="cart.html">Cart</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    <a class="nav-link" href="dashboard.html">Admin</a>
                   </li>
                 </ul>
               </div>
@@ -175,9 +183,11 @@
               <li class="list-group-item  justify-content-between">
                 <div class="cart-total">
                   <strong class="cart-total-title">Total</strong>
-                  <span class="cart-total-price">$0</span>
-                </div>
-                <button class="w-100 btn btn-primary btn-purchase" type="button">PURCHASE</button>
+              		<span class="cart-total-price" id="carttotal" >$0</span>
+				</div>
+				
+				<input type="button" value="Purchase" 
+               onclick="storeAndGo();" class="w-100 btn btn-primary btn-purchase">
               </li>
             </ul>
           </div>
@@ -193,6 +203,5 @@
            </ul>
          </footer>
      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-       </div>
   </body>
   </html>
