@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
   },
   "name": "donaldlopezwebsite",
   "version": "1.0.0",
@@ -24,6 +25,8 @@
     "babel-preset-current-node-syntax": "^1.0.1",
     "babel-preset-jest": "^27.5.1",
     "balanced-match": "^1.0.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
     "brace-expansion": "^1.1.11",
     "braces": "^3.0.2",
     "browser-process-hrtime": "^1.0.0",
@@ -71,6 +74,7 @@
     "execa": "^5.1.1",
     "exit": "^0.1.2",
     "expect": "^27.5.1",
+    "express": "^4.17.3",
     "fast-json-stable-stringify": "^2.1.0",
     "fast-levenshtein": "^2.0.6",
     "fb-watchman": "^2.0.1",
@@ -146,6 +150,7 @@
     "jsesc": "^2.5.2",
     "json-parse-even-better-errors": "^2.3.1",
     "json5": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
     "kleur": "^3.0.3",
     "leven": "^3.1.0",
     "levn": "^0.3.0",
@@ -162,6 +167,8 @@
     "mimic-fn": "^2.1.0",
     "minimatch": "^3.1.2",
     "minimist": "^1.2.5",
+    "mongoose": "^6.2.8",
+    "moongoose": "^0.0.5",
     "ms": "^2.1.2",
     "natural-compare": "^1.4.0",
     "node-int64": "^0.4.0",
