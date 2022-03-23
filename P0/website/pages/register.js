@@ -1,12 +1,12 @@
-const form = document.getElementById('login')
-          form.addEventListener('submit', login)
+const form = document.getElementById('reg-form')
+          form.addEventListener('submit', registerUser)
         
         async function registerUser(event) {
           event.preventDefault()
           const username = document.getElementById('username').value
           const password = document.getElementById('password').value
           
-          const result = await fetch('/api/login', {
+          const result = await fetch('/api/registerUser', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -19,7 +19,6 @@ const form = document.getElementById('login')
 
           if(result.status === 'ok'){
             
-            console.log('Got the token ', result.data)
             alert('Succcess')
           } else {
             alert(resut.error)
