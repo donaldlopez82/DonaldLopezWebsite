@@ -3,14 +3,16 @@
 
 <head>
 	<title>ComicBuy</title>
+	 <link rel="shortcut icon" type="image/jpg" href="../images/Favicon.jpeg"/>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.
+	/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> <link href="../assets/css/cart.css" rel="stylesheet" />
 	<!-- Bootstrap core CSS -->
-	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
-	<link href="navbar.css" rel="stylesheet">
-	<script src="store.js" async></script>
+	<link href="../assets/css/navbar.css" rel="stylesheet">
 	<style>
 		.bg {
 			background: url("../images/bg.jpg");
@@ -20,82 +22,136 @@
 		}
 		
 	</style>
-		<script>
-        function storeAndGo(){
-            // This uses sessionStorage but it can be changed to localStorage
-            var strCartotal = document.getElementById("carttotal").value;
-            sessionStorage.setItem("cartTotal", strCartotal);
-            location.href="cart.html";
-        }
-        
-    </script>
-	
 </head>
 <body class=" list-group mb-3 p-5 bg">
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">ComicBuy.com</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav me-auto mb-2 mb-md-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="comics.html">Comics</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="collectables.html">Collectables</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="apparel.html">Apparel</a>
-					</li>
-				</ul>
+		  <a class="navbar-brand" href="index.html">ComicBuy.com</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav me-auto mb-2 mb-md-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="comics.html">Comics</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="collectables.html">Collectable</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="apparel.html">Apparel</a>
+			  </li>
+			  </ul>
 			</div>
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Sign In</a>
-					</li>
+  
+		  <!--SignIn and Cart Nav-->
+		  <div class="collapse navbar-collapse" id="navbarCollapse">
+		  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				<a class="nav-link" href="index.html">Sign In</a>
+			  </li>
+			</li>
+			<li class="nav-item cart">
+			  <a class="nav-link" href="cart.html"><ion-icon name="basket">
+			  </ion-icon>Cart<span> 0 </span></a>
+			</li>
 				
-					<li class="nav-item">
-						<a class="nav-link" href="dashboard.html">Admin</a>
-					</li>
-				</ul>
-			</div>
-	</nav>
+		 
+			  <li class="nav-item">
+				<a class="nav-link" href="dashboard.html">Admin</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
 <div class="row shop-items">
 <div class="row g-1">
 
 	<h1 class="text-start">
-		<span class="text-primary">STORE<hr>
+		<span class="text-primary fw-bolder">STORE
 		</span>
-	</h1>
-
-		<div class="col shop-item">
+	</h1><hr>
+	<div class="row shop-items container">
+		
+		<div class="row g-1">
+			<div class="col shop-item">
 		  <div class="card mb-4 rounded-3 shadow-sm">
 			<div class="card-header py-3">
-			  <h4 class="my-0 fw-normal shop-item-title">Comic</h4>
+			  <h4 class="my-0 fw-normal shop-item-title">Captain America</h4>
 			</div>
-			<div class="card-body shop-item-details">
-			  <h1 class="card-title pricing-card-title shop-item-price">$15.99<small class="text-muted fw-light"></small></h1>
+			<div class="card-body shop-item-details image">
+			  <h1 class="card-title pricing-card-title shop-item-price">$6.00<small class="text-muted fw-light"></small></h1>
 			  <div class="list-unstyled mt-3 mb-4">
 				<img class="img-fluid shop-item-image" src="../images/comic7.jpg" alt="">
 			  </div>
-			  <button type="button" class="w-100 btn btn-lg btn-primary shop-item-button">Add</button>
+			  <a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart1">Add</a>
+			  <input type="hidden" value="6" />
 			</div>
 		  </div>
-		</div>
+			</div>
 
-		<div class="col shop-item">
+			<div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">Comic</h4>
+				<h4 class="my-0 fw-normal shop-item-title">Batman</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
-				<h1 class="card-title pricing-card-title shop-item-price">$12.99<small class="text-muted fw-light"></small></h1>
+				<h1 class="card-title pricing-card-title shop-item-price">$6.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic8.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/comic12.jpg" alt="">
 				</div>
-				<button type="button" class="w-100 btn btn-lg btn-primary shop-item-button">Add</button>
+				<a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart2">Add</a>
+				<input type="hidden" value="6" />
+			  </div>
+			</div>
+		  	</div>
+
+		  	<div class="col shop-item">
+			<div class="card mb-4 rounded-3 shadow-sm">
+			  <div class="card-header py-3">
+				<h4 class="my-0 fw-normal shop-item-title">House of X</h4>
+			  </div>
+			  <div class="card-body shop-item-details">
+				<h1 class="card-title pricing-card-title shop-item-price">$15.00<small class="text-muted fw-light"></small></h1>
+				<div class="list-unstyled mt-3 mb-4">
+				  <img class="img-fluid shop-item-image" src="../images/comic9.jpg" alt="">
+				</div>
+				<a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart3">Add</a>
+				<input type="hidden" value="15" />
+			  </div>
+			</div>
+		  	</div>
+		</div>
+	
+   		 <div class="row g-1">
+		  <div class="col shop-item">
+			<div class="card mb-4 rounded-3 shadow-sm">
+			  <div class="card-header py-3">
+		  <h4 class="my-0 fw-normal shop-item-title">Hulk</h4>
+			</div>
+			<div class="card-body shop-item-details">
+			  <h1 class="card-title pricing-card-title shop-item-price">$8.00<small class="text-muted fw-light"></small></h1>
+			  <div class="list-unstyled mt-3 mb-4">
+				<img class="img-fluid shop-item-image" src="../images/comic15.jpg" alt="">
+			  </div>
+			  <a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart4">Add</a>
+			  <input type="hidden" value="8" />
+			</div>
+		  </div>
+			</div>
+
+			<div class="col shop-item">
+			<div class="card mb-4 rounded-3 shadow-sm">
+			  <div class="card-header py-3">
+				<h4 class="my-0 fw-normal shop-item-title">Wolverine</h4>
+			  </div>
+			  <div class="card-body shop-item-details">
+				<h1 class="card-title pricing-card-title shop-item-price">$7.00<small class="text-muted fw-light"></small></h1>
+				<div class="list-unstyled mt-3 mb-4">
+				  <img class="img-fluid shop-item-image" src="../images/comic16.jpg" alt="">
+				</div>
+				<a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart5">Add</a>
+				<input type="hidden" value="7" />
 			  </div>
 			</div>
 		  </div>
@@ -103,90 +159,131 @@
 		  <div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">Comic</h4>
+				<h4 class="my-0 fw-normal shop-item-title">Justice League</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
-				<h1 class="card-title pricing-card-title shop-item-price">$13.99<small class="text-muted fw-light"></small></h1>
+				<h1 class="card-title pricing-card-title shop-item-price">$10.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic9.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/comic10.jpg" alt="">
 				</div>
-				<button type="button" class="w-100 btn btn-lg btn-primary shop-item-button">Add</button>
+				<a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart6 btn-purchase">Add</a>
+				<input type="hidden" value="10" />
 			  </div>
 			</div>
 		  </div>
-	
-	<div class="col-md- col-lg-2 order-md-last ">
-
-		<h3 class="text-end">
-			<span class="text-primary">Your cart</span>
-			<span class="badge bg-primary rounded-pill">3</span>
-		</h3>
-
-		<ul class="list-group mb-3 p-5">
-			
-			<li class="list-group-item  justify-content-between 1h-lg ">
-				<div class="cart-items">
-					<div class="cart-row">
-						<span class ="cart-item cart-column">ITEM</span>
-						<span class ="cart-price cart-header cart-column">PRICE</span>
-						<span class ="cart-quantity cart-header cart-column">QUANTITY</span>
-					</div>
-						<div class="cart-item cart-column">
-							<img class="img-fluid cart-item-image w-100" src="../images/comic7.jpg" width="100" alt="">
-							<span class="cart-item-title">Captain America Comic</span>
-						</div>
-						<span class="cart-price cart-column">15.99</span>
-						<div class="cart-quantity cart-column">
-							<input class="w-100 btn-primary btn-sm cart-quantity-input" type="number" value="1">
-							<button type="button" class="w-100 btn btn-lg btn-danger">Remove</button>
-						</div>
-					</div>
-				</li>
-			<li class="list-group-item  justify-content-between lh-sm">
-				<div class="cart-items">
-					<div class="cart-row">
-						<div class="cart-item cart-column">
-							<img class="img-fluid cart-item-image w-100" src="../images/comic8.jpg" width="100" alt="">
-							<span class="cart-item-title">American Ronin</span>
-						</div>
-						<span class="cart-price cart-column">12.99</span>
-						<div class="cart-quantity cart-column">
-							<input class="w-100 btn-primary btn-sm cart-quantity-input" type="number" value="1">
-							<button type="button" class="w-100 btn btn-lg btn-danger">Remove</button>
-						</div>
-					</div>
-				</div>
-			</li>
-
-			<li class="list-group-item  justify-content-between lh-sm">
-				<div class="cart-items">
-					<div class="cart-row">
-						<div class="cart-item cart-column">
-							<img class="img-fluid cart-item-image w-100" src="../images/comic9.jpg" width="100" alt="">
-							<span class="cart-item-title">House of X</span>
-						</div>
-						<span class="cart-price cart-column">13.99</span>
-						<div class="cart-quantity cart-column">
-							<input class="w-100 btn-primary btn-sm cart-quantity-input" type="number" value="1">
-							<button type="button" class="w-100 btn btn-lg btn-danger">Remove</button>
-						</div>
-					</div>
-				</div>
-			</li>
-
-			<li class="list-group-item  justify-content-between">
-				<div class="cart-total">
-					<strong class="cart-total-title">Total</strong>
-					<span class="cart-total-price" id="carttotal" >$0</span>
-				</div>
-				
-				<input type="button" value="Purchase" 
-               onclick="storeAndGo();" class="w-100 btn btn-primary btn-purchase">
-			</li>
-		</ul>
-	</div>
 		</div>
+
+		<div class="row g-1">
+			
+		  <div class="col shop-item">
+			<div class="card mb-4 rounded-3 shadow-sm">
+			  <div class="card-header py-3">
+				<h4 class="my-0 fw-normal shop-item-title">Avengers</h4>
+			  </div>
+			  <div class="card-body shop-item-details">
+				<h1 class="card-title pricing-card-title shop-item-price">$10.00<small class="text-muted fw-light"></small></h1>
+				<div class="list-unstyled mt-3 mb-4">
+				  <img class="img-fluid shop-item-image" src="../images/comic11.jpg" alt="">
+				</div>
+				<a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart7 btn-purchase">Add</a>
+				<input type="hidden" value="10" />
+			  </div>
+			</div>
+		  </div>
 		
+
+		  	<div class="col shop-item">
+			<div class="card mb-4 rounded-3 shadow-sm">
+			  <div class="card-header py-3">
+				<h4 class="my-0 fw-normal shop-item-title">Teen Titans</h4>
+			  </div>
+			  <div class="card-body shop-item-details">
+				<h1 class="card-title pricing-card-title shop-item-price">$8.00<small class="text-muted fw-light"></small></h1>
+				<div class="list-unstyled mt-3 mb-4">
+				  <img class="img-fluid shop-item-image" src="../images/comic17.jpg" alt="">
+				</div>
+				<a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart8 btn-purchase">Add</a>
+				<input type="hidden" value="8" />
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col shop-item">
+			<div class="card mb-4 rounded-3 shadow-sm">
+			  <div class="card-header py-3">
+				<h4 class="my-0 fw-normal shop-item-title">Spawn</h4>
+			  </div>
+			  <div class="card-body shop-item-details">
+				<h1 class="card-title pricing-card-title shop-item-price">$8.00<small class="text-muted fw-light"></small></h1>
+				<div class="list-unstyled mt-3 mb-4">
+				  <img class="img-fluid shop-item-image" src="../images/comic11.jpg" alt="">
+				</div>
+				<a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart9 btn-purchase">Add</a>
+				<input type="hidden" value="8" />
+			  </div>
+			</div>
+		  </div>
+
+		</div>
+
+		<div class="row g-1">
+			
+			<div class="col shop-item">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal shop-item-title">WitchBlade</h4>
+				</div>
+				<div class="card-body shop-item-details">
+				  <h1 class="card-title pricing-card-title shop-item-price">$10.00<small class="text-muted fw-light"></small></h1>
+				  <div class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid shop-item-image" src="../images/comic19.jpg" alt="">
+				  </div>
+				  <a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart10 btn-purchase">Add</a>
+				  <input type="hidden" value="10" />
+				</div>
+			  </div>
+			</div>
+		  
+  
+				<div class="col shop-item">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal shop-item-title">Spiderverse</h4>
+				</div>
+				<div class="card-body shop-item-details">
+				  <h1 class="card-title pricing-card-title shop-item-price">$6.00<small class="text-muted fw-light"></small></h1>
+				  <div class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid shop-item-image" src="../images/comic13.jpg" alt="">
+				  </div>
+				  <a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart11 btn-purchase">Add</a>
+				  <input type="hidden" value="6" />
+				</div>
+			  </div>
+			</div>
+			
+			<div class="col shop-item">
+			  <div class="card mb-4 rounded-3 shadow-sm">
+				<div class="card-header py-3">
+				  <h4 class="my-0 fw-normal shop-item-title">Batman Who Laughs</h4>
+				</div>
+				<div class="card-body shop-item-details">
+				  <h1 class="card-title pricing-card-title shop-item-price">$8.00<small class="text-muted fw-light"></small></h1>
+				  <div class="list-unstyled mt-3 mb-4">
+					<img class="img-fluid shop-item-image" src="../images/comic4.jpg" alt="">
+				  </div>
+				  <a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart12 btn-purchase">Add</a>
+				  <input type="hidden" value="8" />
+				</div>
+			  </div>
+			</div>
+  
+		  </div>
+  
+
+
+
+	</div>
+	</div>
 	</div>
 		<footer class="my-5 pt-5 text-muted text-center text-small">
 			<p class="mb-1">&copy; 2022 ComicBuy</p>
@@ -196,8 +293,10 @@
 				<li class="list-inline-item"><a href="#">Support</a></li>
 			</ul>
 		</footer>
-		<script src="form-validation.js"></script>
-		<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="../assets/js/main.js"></script>
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<script src="../assets/js/bootstrap.bundle.min.js"></script>
+		
 	
 </body>
 </html>

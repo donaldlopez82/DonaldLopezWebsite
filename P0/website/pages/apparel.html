@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <title>ComicBuy</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- Bootstrap core CSS -->
- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
- <!-- Custom styles for this template -->
- <link href="navbar.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/jpg" href="../images/Favicon.jpeg"/>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.
+	/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> <link href="../assets/css/cart.css" rel="stylesheet" />
+	<!-- Bootstrap core CSS -->
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="../assets/css/navbar.css" rel="stylesheet">
  <style>
     
   .bg { 
@@ -19,49 +21,49 @@
     margin-top: 80px;
     
   }</style>
-	   
-	<script>
-        function storeAndGo(){
-            // This uses sessionStorage but it can be changed to localStorage
-            var strCartotal = document.getElementById("carttotal").value;
-            sessionStorage.setItem("cartTotal", strCartotal);
-            location.href="cart.html";
-        }
-        
-    </script>
-	
 </head>
 
 <body class=" list-group mb-3 p-5 bg">
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">ComicBuy.com</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav me-auto mb-2 mb-md-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="comics.html">Comics</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="collectables.html">Collectables</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="apparel.html">Apparel</a>
-					</li>
-				</ul>
-			</div>
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Sign In</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="dashboard.html">Admin</a>
-					</li>
-				</ul>
-			</div>
-	</nav>
+	         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ComicBuy.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="apparel.html">Apparel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comics.html">Comics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="collectables.html">Collectables</a>
+            </li>
+			</ul>
+          </div>
+
+        <!--SignIn and Cart Nav-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+              <a class="nav-link" href="index.html">Sign In</a>
+            </li>
+		</li>
+		<li class="nav-item cart">
+		  <a class="nav-link" href="cart.html"><ion-icon name="basket">
+		  </ion-icon>Cart<span> 0 </span></a>
+		</li>
+              
+       
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 <div class="row shop-items">
 <div class="row g-1">
 
@@ -183,7 +185,7 @@
                onclick="storeAndGo();" class="w-100 btn btn-primary btn-purchase">
 			</li>
 		</ul>
-	</div>
+	</div>	
 		</div>
 		
 	</div>
@@ -195,6 +197,8 @@
             <li class="list-inline-item"><a href="#">Support</a></li>
          </ul>
        </footer>
-	 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+	   <script src="../assets/js/main.js"></script>
+	 <script src="../assets/js/bootstrap.bundle.min.js"></script>
+	 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
