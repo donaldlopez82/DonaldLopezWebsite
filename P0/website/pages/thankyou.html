@@ -20,15 +20,6 @@
       }
       </style>
 
-<script>
-  function storeAndGo(){
-      var strCustomer = document.getElementById("username").value;
-      sessionStorage.setItem("userName", strCustomer);
-      location.href="comics.html";
-  }
-  
-</script>
-
 
     </head>
   <body class="text-center bg">
@@ -60,7 +51,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 			<li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Sign In</a>
+                <a class="nav-link" href="index.html">Sign In</a>
               </li>
              
               <li class="nav-item">
@@ -77,45 +68,20 @@
     </nav>
 
     <div class="container">
-    <main class="form-signin">
-        <form id="login">
+   
+       
           <img class="mb-4" src="../images/logo.png" alt="" width="288" height="248">
-          <h1 class="h3 mb-3 fw-normal"><strong> Please sign in</strong></h1>
+         
   
-                <div class="col-12">
-                  <label for="username" class="form-label username">Username</label>
-
-                  <div class="input-group has-validation">
-                   <!---username-->
-                    <input type="text" class="form-control" autocomplete="off" id="username" placeholder="Username" required />
-                   
-                    <div class="invalid-feedback">
-                      Your username is required.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <label for="password" class="form-label">Password</label>
-                  <div class="input-group has-validation">
-                    <!--password-->
-                  <input type="password" class="form-control" autocomplete="off" id="password" placeholder="Password" required />
-                  <div class="invalid-feedback">
-                  </div>
-                </div>
-              </div>
+          <script>
+            // This uses sessionStorage but it can be changed to localStorage
+            var custName = sessionStorage.getItem("userName");
+            
+            
+            document.write('<p>Thank you for your purchase, ' + custName + '!</p>');
         
-          <div class="col-sm-12">
-            <!--submit-->
-          <!--<input type="submit" value="Submit" class="w-100 btn btn-primary btn-lg">-->
-          
-          <input type="button" value="Submit" class="w-100 btn btn-primary btn-lg"
-          onclick="storeAndGo();">
-          <div>
-          <a href="signup.html">Sign up</a>
-          </div>
-        </div>
-      </form>
-		</main>
+        </script>
+      
         <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; 2022 ComicBuy</p>
            <ul class="list-inline">

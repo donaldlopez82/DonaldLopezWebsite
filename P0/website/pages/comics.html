@@ -71,18 +71,26 @@
 		<span class="text-primary fw-bolder">STORE
 		</span>
 	</h1><hr>
-	<div class="row shop-items container">
+	<script>
+        // This uses sessionStorage but it can be changed to localStorage
+        var custName = sessionStorage.getItem("userName");
+		
+		
+        document.write('<h2>Welcome to ComicBuy ' + custName + '!</h2>');
+    
+    </script>
+	<div class="row shop-items container text-center">
 		
 		<div class="row g-1">
 			<div class="col shop-item">
 		  <div class="card mb-4 rounded-3 shadow-sm">
 			<div class="card-header py-3">
-			  <h4 class="my-0 fw-normal shop-item-title">Captain America</h4>
+			  <h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">Captain America</h4>
 			</div>
 			<div class="card-body shop-item-details image">
 			  <h1 class="card-title pricing-card-title shop-item-price">$6.00<small class="text-muted fw-light"></small></h1>
 			  <div class="list-unstyled mt-3 mb-4">
-				<img class="img-fluid shop-item-image" src="../images/comic7.jpg" alt="">
+				<img class="img-fluid shop-item-image" src="../images/captainamerica.jpg" alt="">
 			  </div>
 			  <a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart1">Add</a>
 			  <input type="hidden" value="6" />
@@ -93,12 +101,12 @@
 			<div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">Batman</h4>
+				<h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">Batman</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
 				<h1 class="card-title pricing-card-title shop-item-price">$6.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic12.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/batman.jpg" alt="">
 				</div>
 				<a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart2">Add</a>
 				<input type="hidden" value="6" />
@@ -109,12 +117,12 @@
 		  	<div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">House of X</h4>
+				<h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">House of X</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
 				<h1 class="card-title pricing-card-title shop-item-price">$15.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic9.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/houseofx.jpg" alt="">
 				</div>
 				<a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart3">Add</a>
 				<input type="hidden" value="15" />
@@ -127,12 +135,12 @@
 		  <div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-		  <h4 class="my-0 fw-normal shop-item-title">Hulk</h4>
+		  <h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">Hulk</h4>
 			</div>
 			<div class="card-body shop-item-details">
 			  <h1 class="card-title pricing-card-title shop-item-price">$8.00<small class="text-muted fw-light"></small></h1>
 			  <div class="list-unstyled mt-3 mb-4">
-				<img class="img-fluid shop-item-image" src="../images/comic15.jpg" alt="">
+				<img class="img-fluid shop-item-image" src="../images/hulk.jpg" alt="">
 			  </div>
 			  <a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart4">Add</a>
 			  <input type="hidden" value="8" />
@@ -143,12 +151,12 @@
 			<div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">Wolverine</h4>
+				<h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">Wolverine</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
 				<h1 class="card-title pricing-card-title shop-item-price">$7.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic16.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/wolverine.jpg" alt="">
 				</div>
 				<a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart5">Add</a>
 				<input type="hidden" value="7" />
@@ -159,12 +167,12 @@
 		  <div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">Justice League</h4>
+				<h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">Justice League</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
 				<h1 class="card-title pricing-card-title shop-item-price">$10.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic10.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/justiceleague.jpg" alt="">
 				</div>
 				<a href="#" type="button" class="w-100 btn btn-lg btn-primary add-cart cart6 btn-purchase">Add</a>
 				<input type="hidden" value="10" />
@@ -178,12 +186,12 @@
 		  <div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">Avengers</h4>
+				<h4 class="my-0 fw-normal shop-item-title style="font-size: 2vw;"">Avengers</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
 				<h1 class="card-title pricing-card-title shop-item-price">$10.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic11.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/avengers.jpg" alt="">
 				</div>
 				<a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart7 btn-purchase">Add</a>
 				<input type="hidden" value="10" />
@@ -195,12 +203,12 @@
 		  	<div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">Teen Titans</h4>
+				<h4 class="my-0 fw-normal shop-item-title style="font-size: 2vw;"">Teen Titans</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
 				<h1 class="card-title pricing-card-title shop-item-price">$8.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic17.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/teentitans.jpg" alt="">
 				</div>
 				<a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart8 btn-purchase">Add</a>
 				<input type="hidden" value="8" />
@@ -211,12 +219,12 @@
 		  <div class="col shop-item">
 			<div class="card mb-4 rounded-3 shadow-sm">
 			  <div class="card-header py-3">
-				<h4 class="my-0 fw-normal shop-item-title">Spawn</h4>
+				<h4 class="my-0 fw-normal shop-item-title " style="font-size: 2vw;">Spawn</h4>
 			  </div>
 			  <div class="card-body shop-item-details">
 				<h1 class="card-title pricing-card-title shop-item-price">$8.00<small class="text-muted fw-light"></small></h1>
 				<div class="list-unstyled mt-3 mb-4">
-				  <img class="img-fluid shop-item-image" src="../images/comic11.jpg" alt="">
+				  <img class="img-fluid shop-item-image" src="../images/spawn.jpg" alt="">
 				</div>
 				<a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart9 btn-purchase">Add</a>
 				<input type="hidden" value="8" />
@@ -231,12 +239,12 @@
 			<div class="col shop-item">
 			  <div class="card mb-4 rounded-3 shadow-sm">
 				<div class="card-header py-3">
-				  <h4 class="my-0 fw-normal shop-item-title">WitchBlade</h4>
+				  <h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">WitchBlade</h4>
 				</div>
 				<div class="card-body shop-item-details">
 				  <h1 class="card-title pricing-card-title shop-item-price">$10.00<small class="text-muted fw-light"></small></h1>
 				  <div class="list-unstyled mt-3 mb-4">
-					<img class="img-fluid shop-item-image" src="../images/comic19.jpg" alt="">
+					<img class="img-fluid shop-item-image" src="../images/witchblade.jpg" alt="">
 				  </div>
 				  <a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart10 btn-purchase">Add</a>
 				  <input type="hidden" value="10" />
@@ -248,12 +256,12 @@
 				<div class="col shop-item">
 			  <div class="card mb-4 rounded-3 shadow-sm">
 				<div class="card-header py-3">
-				  <h4 class="my-0 fw-normal shop-item-title">Spiderverse</h4>
+				  <h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">Spiderverse</h4>
 				</div>
 				<div class="card-body shop-item-details">
 				  <h1 class="card-title pricing-card-title shop-item-price">$6.00<small class="text-muted fw-light"></small></h1>
 				  <div class="list-unstyled mt-3 mb-4">
-					<img class="img-fluid shop-item-image" src="../images/comic13.jpg" alt="">
+					<img class="img-fluid shop-item-image" src="../images/spiderverse.jpg" alt="">
 				  </div>
 				  <a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart11 btn-purchase">Add</a>
 				  <input type="hidden" value="6" />
@@ -264,12 +272,12 @@
 			<div class="col shop-item">
 			  <div class="card mb-4 rounded-3 shadow-sm">
 				<div class="card-header py-3">
-				  <h4 class="my-0 fw-normal shop-item-title">Batman Who Laughs</h4>
+				  <h4 class="my-0 fw-normal shop-item-title" style="font-size: 2vw;">Batman Who Laughs</h4>
 				</div>
 				<div class="card-body shop-item-details">
 				  <h1 class="card-title pricing-card-title shop-item-price">$8.00<small class="text-muted fw-light"></small></h1>
 				  <div class="list-unstyled mt-3 mb-4">
-					<img class="img-fluid shop-item-image" src="../images/comic4.jpg" alt="">
+					<img class="img-fluid shop-item-image" src="../images/batmanwholaughs.jpg" alt="">
 				  </div>
 				  <a href="" type="button" class="w-100 btn btn-lg btn-primary add-cart cart12 btn-purchase">Add</a>
 				  <input type="hidden" value="8" />

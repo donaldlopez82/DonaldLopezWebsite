@@ -21,6 +21,15 @@
         background-size: cover;
       }
     </style>
+       <script>
+        function storeAndGo(){
+            // This uses sessionStorage but it can be changed to localStorage
+            var strCustomer = document.getElementById("username").value;
+            sessionStorage.setItem("userName", strCustomer);
+            location.href="thankyou.html";
+        }
+        
+    </script>
   </head>
 
   <body class="bg">
@@ -50,7 +59,7 @@
 			  <li class="nav-item">
               <a class="nav-link" href="index.html">Sign In</a>
             </li>
-          </li>
+        
           <li class="nav-item cart">
             <a class="nav-link active" aria-current="page href="cart.html"><ion-icon name="basket">
             </ion-icon>Cart<span> 0 </span></a>
@@ -329,7 +338,9 @@
 
           <hr class="my-4" />
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">
+          <button class="w-100 btn btn-primary btn-lg" type="submit">submit info</button><hr>
+            <input class="w-100 btn btn-primary btn-lg" type="button" value="Check out" 
+            onclick="storeAndGo();">
             Checkout
           </button>
         </form>
@@ -352,6 +363,6 @@
     <script src="../assets/js/form-validation.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="store.js"></script>
+  
   </body>
 </html>

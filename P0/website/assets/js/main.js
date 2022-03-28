@@ -3,73 +3,73 @@ let carts = document.querySelectorAll('.add-cart');
 let products = [ 
     {
         name: "Captain America",
-        tag: "comic7",
+        tag: "captainamerica",
         price: 6,
         inCart: 0
     },
     {
         name: "Batman",
-        tag: "comic12",
+        tag: "batman",
         price: 6,
         inCart: 0
     },
     {
         name: "House of X",
-        tag: "comic9",
+        tag: "houseofx",
         price: 15,
         inCart: 0
     },
     {
         name: "Hulk",
-        tag: "comic15",
+        tag: "hulk",
         price: 8,
         inCart: 0
     },
     {
         name: "Wolverine",
-        tag: "comic16",
+        tag: "wolverine",
         price: 7,
         inCart: 0
     },
     {
         name: "Justice League",
-        tag: "comic10",
+        tag: "justiceleague",
         price: 10,
         inCart: 0
     },
     {
         name: "Avengers",
-        tag: "comic11",
+        tag: "avengers",
         price: 10,
         inCart: 0
     },
     {
-        name: "Teen Titans",
-        tag: "comic7",
+        name: "Teentitans",
+        tag: "teentitans",
         price: 8,
         inCart: 0
     },
     {
         name: "Spawn",
-        tag: "comic11",
+        tag: "spawn",
         price: 8,
         inCart: 0
     },
     {
-        name: "WitchBlade",
-        tag: "comic19",
+        name: "Witch Blade",
+        tag: "witchblade",
         price: 10,
         inCart: 0
     },
     {
-        name: "Spiderverse",
-        tag: "comic13",
+        name: "Spider Verse",
+        tag: "spiderverse",
         price: 6,
         inCart: 0
     },
     {
         name: "Batman Who Laughs",
-        tag: "comic4",
+        tag: "batmanwholaughs",
         price: 8,
         inCart: 0
     }
